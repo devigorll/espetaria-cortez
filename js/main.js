@@ -18,8 +18,9 @@
   $("#year").textContent = new Date().getFullYear();
   document.querySelectorAll("[data-wa]").forEach(function (a) { a.href = CFG.whatsappLink; });
   (function () {
-    var d = new Date(), open = CFG.openDays.indexOf(d.getDay()) > -1 && d.getHours() >= CFG.openHour && d.getHours() < CFG.closeHour;
-    $("#openState").textContent = open ? "Aberto agora · " + CFG.hours : "Fechado agora · " + CFG.hours;
+    var d = new Date(), t = CFG.schedule[d.getDay()], h = d.getHours() + d.getMinutes() / 60;
+    var open = !!t && h >= t[0] && h < t[1];
+    $("#openState").textContent = open ? "Aberto agora · até " + t[1] + "h" : "Fechado agora";
   })();
 
   /* Categorias e filtros */

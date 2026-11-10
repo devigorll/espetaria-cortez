@@ -5,8 +5,8 @@ TDT.CONFIG = {
   address: "Rua Eritréia, 49",
   neighborhood: "", // preencher quando disponível
   city: "",         // preencher quando disponível
-  hours: "Segunda a sábado, das 09h às 19h",
-  openDays: [1, 2, 3, 4, 5, 6], openHour: 9, closeHour: 19,
+  hours: "Terça a sábado, das 09h às 19h · Domingo, das 09h às 15h",
+  schedule: { 0: [9, 15], 2: [9, 19], 3: [9, 19], 4: [9, 19], 5: [9, 19], 6: [9, 19] }, // dia da semana (0 = domingo): [abre, fecha]; segunda fechado
   whatsappLink: "https://wa.me/5511962441229", // contato geral (botões "Fale conosco", flutuante e rodapé)
   whatsappPhone: "5511962441229" // +55 11 96244-1229 (só dígitos): envia o pedido já preenchido
 };
