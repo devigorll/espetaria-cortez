@@ -4,7 +4,7 @@ TDT.CONFIG = {
   storeName: "Espetaria Cortez",
   address: "Rua Eritréia, 49",
   neighborhood: "", // preencher quando disponível
-  city: "",         // preencher quando disponível
+  city: "Francisco Morato",         // preencher quando disponível
   hours: "Terça a sábado, das 09h às 19h · Domingo, das 09h às 15h",
   schedule: { 0: [9, 15], 2: [9, 19], 3: [9, 19], 4: [9, 19], 5: [9, 19], 6: [9, 19] }, // dia da semana (0 = domingo): [abre, fecha]; segunda fechado
   whatsappLink: "https://wa.me/5511962441229", // contato geral (botões "Fale conosco", flutuante e rodapé)
@@ -12,6 +12,7 @@ TDT.CONFIG = {
 };
 TDT.CATEGORIES = [
   { id: "batatas", name: "Batatas", image: "assets/images/categories/batatas.jpg" },
+  { id: "marmitas", name: "Marmitas", image: "assets/images/categories/marmita.jpg" },
   { id: "espetinhos", name: "Espetinhos e Porções", image: "assets/images/categories/espetinhos.jpg" },
   { id: "cervejas", name: "Cervejas", image: "assets/images/categories/cervejas.jpg" },
   { id: "refri", name: "Refrigerantes e Sucos", image: "assets/images/categories/refri.jpg" }
@@ -22,17 +23,27 @@ TDT.PRODUCTS = [
   { id: "batata-pote-calabresa", category: "batatas", name: "Batata no Pote - Calabresa", description: "Batata cremosa com calabresa. Acompanha cheddar, requeijão, mussarela, milho e bacon.", price: 20.00, image: "assets/images/products/batata-pote-calabresa.jpg", tags: [] },
   { id: "batata-pote-strogonoff", category: "batatas", name: "Batata no Pote - Strogonoff", description: "Batata cremosa com strogonoff de frango. Acompanha cheddar, requeijão, mussarela, milho e bacon.", price: 20.00, image: "assets/images/products/batata-pote-strogonoff.jpg", tags: [] },
   { id: "batata-pote-carne-moida", category: "batatas", name: "Batata no Pote - Carne Moída", description: "Batata cremosa com carne moída. Acompanha cheddar, requeijão, mussarela, milho e bacon.", price: 20.00, image: "assets/images/products/batata-pote-carne-moida.jpg", tags: [] },
+
   { id: "espetinho-carne", category: "espetinhos", name: "Espetinho de Carne", description: "Espetinho de carne.", price: 10.00, image: "assets/images/products/espetinho-carne.jpg", tags: [] },
   { id: "espetinho-frango", category: "espetinhos", name: "Espetinho de Frango", description: "Espetinho de frango.", price: 10.00, image: "assets/images/products/espetinho-frango.jpg", tags: [] },
   { id: "espetinho-linguica", category: "espetinhos", name: "Espetinho de Linguiça", description: "Espetinho de linguiça.", price: 10.00, image: "assets/images/products/espetinho-linguica.jpg", tags: [] },
   { id: "espetinho-misto", category: "espetinhos", name: "Espetinho Misto", description: "Espetinho misto.", price: 10.00, image: "assets/images/products/espetinho-misto.jpg", tags: [] },
+
   { id: "porcao-calabresa", category: "espetinhos", name: "Porção de Calabresa", description: "Porção de calabresa.", price: 30.00, image: "assets/images/products/porcao-calabresa.jpg", tags: [] },
+
   { id: "cachorro-quente", category: "espetinhos", name: "Cachorro-Quente", description: "Cachorro-quente.", price: 10.00, image: "assets/images/products/cachorro-quente.jpg", tags: [] },
+
+  { id: "marmita", category: "marmitas", name: "Marmita - espetinho de carne", description: "Espetinho de carne acompanhado de arroz, feijão, vinagrete e farofa.", price: 15.00, image: "assets/images/products/marmita-espeto-carne.webp", tags: [] },
+  { id: "marmita", category: "marmitas", name: "Marmita - espetinho de frango", description: "Espetinho de linguiça acompanhado de arroz, feijão, vinagrete e farofa.", price: 15.00, image: "assets/images/products/marmita-espeto-frango.webp", tags: [] },
+  { id: "marmita", category: "marmitas", name: "Marmita - espetinho de linguiça", description: "Espetinho de frango acompanhado de arroz, feijão, vinagrete e farofa.", price: 15.00, image: "assets/images/products/marmita-espeto-linguica.png", tags: [] },
+  { id: "marmita", category: "marmitas", name: "Marmita - espetinho misto", description: "Espetinho misto acompanhado de arroz, feijão, vinagrete e farofa.", price: 15.00, image: "assets/images/products/marmita-espeto-misto.png", tags: [] },
+
   { id: "coxinha", category: "espetinhos", name: "Coxinha", description: "Salgado de frango.", price: 4.00, image: "assets/images/products/coxinha.jpg", tags: [] },
   { id: "bolinho-carne", category: "espetinhos", name: "Bolinho de Carne", description: "Salgado de carne.", price: 4.00, image: "assets/images/products/bolinho-carne.jpg", tags: [] },
   { id: "risole", category: "espetinhos", name: "Risóleis de Presunto e Queijo", description: "Salgado de presunto e queijo.", price: 4.00, image: "assets/images/products/risole.jpg", tags: [] },
   { id: "enroladinho-salsicha", category: "espetinhos", name: "Enroladinho de Salsicha", description: "Salgado de salsicha.", price: 4.00, image: "assets/images/products/enroladinho-salsicha.jpg", tags: [] },
   { id: "skol-550-ml", category: "cervejas", name: "Skol (550 ml)", description: "Cerveja, 550 ml.", price: 8.00, image: "assets/images/products/skol-550-ml.jpg", tags: [] },
+
   { id: "amstel-lager-350-ml", category: "cervejas", name: "Amstel Lager (350 ml)", description: "Cerveja, 350 ml.", price: 6.00, image: "assets/images/products/amstel-lager-350-ml.jpg", tags: [] },
   { id: "budweiser-350-ml", category: "cervejas", name: "Budweiser (350 ml)", description: "Cerveja, 350 ml.", price: 6.00, image: "assets/images/products/budweiser-350-ml.jpg", tags: [] },
   { id: "imperio-350-ml", category: "cervejas", name: "Império (350 ml)", description: "Cerveja, 350 ml.", price: 6.00, image: "assets/images/products/imperio-350-ml.jpg", tags: [] },
@@ -41,6 +52,7 @@ TDT.PRODUCTS = [
   { id: "brahma-duplo-malte-269-ml", category: "cervejas", name: "Brahma Duplo Malte (269 ml)", description: "Cerveja, 269 ml.", price: 5.00, image: "assets/images/products/brahma-duplo-malte-269-ml.jpg", tags: [] },
   { id: "itaipava-350-ml", category: "cervejas", name: "Itaipava (350 ml)", description: "Cerveja, 350 ml.", price: 5.00, image: "assets/images/products/itaipava-350-ml.jpg", tags: [] },
   { id: "skol-269-ml", category: "cervejas", name: "Skol (269 ml)", description: "Cerveja, 269 ml.", price: 5.00, image: "assets/images/products/skol-269-ml.jpg", tags: [] },
+  
   { id: "coca-cola-600-ml", category: "refri", name: "Coca-Cola (600 ml)", description: "Refrigerante, 600 ml.", price: 8.00, image: "assets/images/products/coca-cola-600-ml.jpg", tags: [] },
   { id: "fanta-laranja-600-ml", category: "refri", name: "Fanta Laranja (600 ml)", description: "Refrigerante, 600 ml.", price: 8.00, image: "assets/images/products/fanta-laranja-600-ml.jpg", tags: [] },
   { id: "pepsi-600-ml", category: "refri", name: "Pepsi (600 ml)", description: "Refrigerante, 600 ml.", price: 8.00, image: "assets/images/products/pepsi-600-ml.jpg", tags: [] },
